@@ -18,9 +18,8 @@ const NavBar = ({ color }) => {
                 <li>Nosotros</li>        
                 <li>Contactanos</li>
                 <li>Carrito</li>
-                <li><CartWidget style={{width: 10, height: 10}}></CartWidget></li>              
+                <CartWidget></CartWidget>          
             </ul>
-            
         </nav>
         
     </header>

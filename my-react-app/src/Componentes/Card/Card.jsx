@@ -7,9 +7,8 @@ import Typography from '@mui/material/Typography';
 import "./Card.css"
 
 const CardUser = () => {
-  const imgCarrito = "https://cdn-icons-png.flaticon.com/512/107/107831.png"
       return (
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 345}}>
         <CardMedia
           component="img"
           alt="posavasos de hulk"
@@ -27,8 +26,6 @@ const CardUser = () => {
         <CardActions>
           <Button size="small">Compartir</Button>
           <Button size="small">Leer más</Button>
-          <img src={imgCarrito} alt="Carrito" height="25"></img>
-          <strong>5</strong>
         </CardActions>
       </Card>
       );
