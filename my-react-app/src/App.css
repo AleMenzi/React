@@ -1,12 +1,24 @@
 #root {
-  min-width: 100%;
-  margin: 0 auto;
+  min-width: 95%;
+  max-width: 101%;
+  min-height: 1200px;
+  margin: 0;
   padding: 2rem;
   text-align: center;
-  background-color: gray;
+  background: rgb(164,181,252);
+  background: linear-gradient(90deg, rgba(164,181,252,1) 0%, rgba(151,200,245,1) 50%, rgba(138,238,255,1) 95%);
 }
 
 .titulo{
-  color: red;
+  font-family:'Bangers';
+  font-style: normal;
+    font-weight: lighter;
+    font-size: 65px;
+    text-align: center;
+    line-height: 60px;
+    letter-spacing: 3px;
+    color:rgb(2, 21, 37);
+    padding: 35px;
+    text-shadow: .5px 2px 3px rgb(188, 246, 246), 0 0 25px blue, 0 0 5px darkblue;
 }
 

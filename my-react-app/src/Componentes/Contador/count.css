@@ -1,4 +1,13 @@
-.ItemCount{
+.contar{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height: 40px;
+}
+.contarCss{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    min-width: 30px;
 }

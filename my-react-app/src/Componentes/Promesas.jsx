@@ -8,6 +8,17 @@
 //Promesas: es un objeto de JS que representa un evento a futuro
 //En general representa el resultado eventual de una petición asíncrona
 //Las promesas tienen tres estados: pendiente, cumplida o rechazada. (pending, fullfilled, rejected)
+/*RAFC
+import React from 'react'
+
+export const Promesas = () => {
+  return (
+    <div>Promesas</div>
+  )
+}
+*/
+
+
 
 
 const Promesas = () => {

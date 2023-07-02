@@ -1,0 +1,11 @@
+.titulo2{
+        font-family:'Bangers';
+        font-style: normal;
+          font-weight: bold;
+          font-size: 55px;
+          text-align: center;
+          line-height: 60px;
+          letter-spacing: 3px;
+          color:rgb(2, 21, 37);
+          text-shadow: .5px 2px 3px rgb(188, 246, 246), 0 0 25px blue, 0 0 5px darkblue;
+}

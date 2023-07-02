@@ -1,14 +1,36 @@
+
 const misProductos = [
-    {id:1, nombre: "Yerba", precio: 800, img: "https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.gustoargentino.com%2Fproducts%2Fyerba-mate-naranja-cbse&psig=AOvVaw3CVjWU17k4wU8KiI1qDAan&ust=1686786551346000&source=images&cd=vfe&ved=0CBEQjRxqFwoTCMCf7uK3wf8CFQAAAAAdAAAAABAH"},
-    {id:2, nombre: "Azúcar", precio: 400, img: ""},
-    {id:3, nombre: "Té", precio: 300, img: ""},
-    {id:4, nombre: "Café", precio: 500, img: ""},
+    {id:"1", price: 640, title:"Posavasos del Increible Hulk", image:"https://phoenix3d.netlify.app/img/hulkposavasos.png", idCat:"1"},
+    {id:"2", price: 550, title:"Posavasos del Dios del Trueno Thor", image:"https://phoenix3d.netlify.app/img/thorposavasos.png", idCat:"1"},
+    {id:"3", price: 790, title:"Posavasos de Black Panther", image:"https://phoenix3d.netlify.app/img/bpantherposavasos.png", idCat:"2"},
+    {id:"4", price: 830, title:"Posavasos de Iron Man", image:"https://phoenix3d.netlify.app/img/ironmanposavasos.png", idCat:"5"},
+    {id:"5", price: 850, title:"Posavasos de Dr. Strange", image:"https://phoenix3d.netlify.app/img/drstrangeposavasos.png", idCat:"3"},
+    {id:"6", price: 720, title:"Posavasos de Agentes de Shield", image:"https://phoenix3d.netlify.app/img/shieldposavasos.png", idCat:"4"}
 ]
 
-const getProductos = () => {
+export const getProductos = () => {
     return new Promise((resolve) => {
         setTimeout( () => {
-            resolve(misProductos);
-        }, 2000)
+            resolve(misProductos)
+        }, 200)
     })
+};
+
+export const getUnProducto = (id) => {
+  return new Promise(resolve => {
+    setTimeout( () => {
+    const producto = misProductos.find(prod=> prod.id === id);
+     resolve(producto)
+    }, 200)
+  })
 }
+  
+export const getProductosPorCategoria = (idCategoria) => {
+    return new Promise ( resolve => {
+        setTimeout( () => {
+            const productosCategoria = misProductos.filter(prod => prod.idCat === idCategoria);
+            resolve(productosCategoria);
+    }, 200)
+   })
+  }
+

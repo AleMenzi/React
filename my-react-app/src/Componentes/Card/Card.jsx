@@ -5,30 +5,32 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import "./Card.css"
+import ItemCount from '../Contador/count'
 
-const CardUser = () => {
+const CardUser = (props) => {
+  const {title, image, price} = props
       return (
-      <Card sx={{ maxWidth: 345}}>
+      <Card sx={{ width: "21%", height:"530px"}}>
         <CardMedia
           component="img"
-          alt="posavasos de hulk"
           height="300"
-          image="https://phoenix3d.netlify.app/img/hulkposavasos.png"
+          image={image}
         />
-        <CardContent>
+        <CardContent className='infoItem'>
           <Typography gutterBottom variant="h5" component="div">
-            Posavasos de Hulk
+            {title}
           </Typography>
-          <Typography variant="body2" color="text.secondary">
-            Hulk es un personaje ficticio, un superhéroe que aparece en los cómics estadounidenses publicados por la editorial Marvel Comics, es considerado el personaje más fuerte de Marvel Comics.
+          <Typography variant="body1" color="text.primary">
+            {price}
           </Typography>
         </CardContent>
         <CardActions>
-          <Button size="small">Compartir</Button>
-          <Button size="small">Leer más</Button>
+        <ItemCount initial={1} stock={3} onAdd={(contador) => console.log("Cantidad agregada ", contador , {title})}/>
         </CardActions>
       </Card>
+
       );
       
     }
+
 export default CardUser;
