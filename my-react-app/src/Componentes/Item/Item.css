@@ -16,6 +16,7 @@
     align-items: center;
     margin-top: 10px;
     margin-left: 5%;
+    width: 100%;
 }
 .card{
     height: 750px;
@@ -34,13 +35,13 @@
     display: flex;
     justify-content: center;
     align-content: center;
-    gap: 10px;
+    gap: 5px;
 }
 .details{
-    margin-top: 25px;
+    margin-top: 10px;
     margin-left: 2px;
     width: 80%;
-    margin-left: 8%;
+    margin-left: 13%;
 }
 .Counter{
     width: 85%;
