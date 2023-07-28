@@ -22,7 +22,7 @@ const ItemListContainer = (props) => {
 
            getDocs(funcion)
             .then(res => {
-                const nuevoInv = res.doc.map(doc => {
+                const nuevoInv = res.docs.map(doc => {
                 const data = doc.data()
                 return {id: doc.id, ...data}
                 })

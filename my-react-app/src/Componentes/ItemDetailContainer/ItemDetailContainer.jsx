@@ -1,5 +1,4 @@
 import { useState, useEffect } from "react"
-//import { getUnProducto } from "../../asyncmock"
 import ItemDetail from "../ItemDetail/ItemDetail";
 import { useParams } from "react-router-dom";
 import { getDoc, doc } from "firebase/firestore";
@@ -20,10 +19,12 @@ const ItemDetailContainer = () => {
           })
           .catch(error => console.log(error))
     }, [idItem])
-
+console.log(producto);
   return (
     <div>
-        <ItemDetail {...producto} />
+        {
+          producto.Nombre ? (<ItemDetail {...producto}/>) : <h4>Este Producto no existe en nuestra base de datos</h4>
+        }
     </div>
   )
 }

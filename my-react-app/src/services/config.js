@@ -5,9 +5,10 @@ import { getFirestore } from "firebase/firestore"
 // getFirestore = se utiliza para obtener una instancia de Firestore.
 
 // Estamos trabajando con un objeto con toda nuestra información de la cuenta. Acá incluyo la Key personal con acceso a esta base de datos.
+//apiKey: "AIzaSyDLNd9H97m0izOxGWiaswZgYdOCbw7Atb4",
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDLNd9H97m0izOxGWiaswZgYdOCbw7Atb4",
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
   authDomain: "phoenix-react.firebaseapp.com",
   projectId: "phoenix-react",
   storageBucket: "phoenix-react.appspot.com",
